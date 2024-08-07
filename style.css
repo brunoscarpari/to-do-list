@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(71, 69, 82);
+}
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.todolist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    background-color: rgb(25, 24, 34);
+    gap: 15px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    margin-top: 20px;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.new-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+
+}
+
+#newitem{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.buttonadd{
+    color: white;
+    background-color: rgb(228, 25, 167);
+    border: none;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 10px;
+    font-weight: 800;
+}
+
+.buttonadd:hover{
+    background-color:rgb(115, 18, 241) ;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    width: 70%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    margin: 6px;   
+    border: solid 1px rgb(103, 102, 110);
+
+}
+
+.item:hover{
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: rgb(103, 102, 110) ;
+}
+
+.item > input[type='checkbox']:checked + div{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(228, 25, 167);
+}
+
+.item > input[type='button']{
+    width: 60px;
+    height: 30px;
+    font: inherit;
+    color: rgb(214, 0, 0);
+    border: none;
+    background-color: transparent;
+}
+.item > input[type='button']:hover{
+    color: rgb(252, 255, 58);
+}
+
+
+.item > input[type='checkbox']{
+    width: 30px;
+    height: 30px;
+    font: inherit;
+}
